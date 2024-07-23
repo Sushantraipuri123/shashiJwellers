@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.montserrat{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+
+.dropdown-menu {
+    display: none;
+  }
+  
+  .dropdown:hover .dropdown-menu.show {
+    display: block;
+  }
+
+  .drop-btn:hover{
+    color: #000000A6;
+  }
+  .drop-btn{
+    color: #000000A6;
+  }
+
+  .drop-btn:focus {
+    outline: none;
+  }
+ 
+
+.logo {
+  max-width: 208px !important; 
+  height: 40px; 
+}
+
+
+.dropdown-menu {
+  transition: all 0.3s ease-in-out;
+}
+
+.btn.drop-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  color: inherit;
+  cursor: pointer;
+}
+
+
+.image-container {
+  position: relative;
+}
+
+.image-container .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: white;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+.overlay-text {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  .navbar-collapse {
+      position: absolute;
+      top: 72px;
+      right: 0;
+      left: 0;
+      background-color: #fff; 
+      z-index: 1000;
+  }
+}
+
+.nav-text {
+  color: #666666; 
+  position: relative;
+  text-decoration: none;
+  line-height: 57px;
+font-size: 14px;
+}
+
+.nav-text:hover::after {
+  visibility: visible;
+  width: 100%;
+}
+
+.nav-text::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: rgba(158, 31, 31, 0.562);
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-text.active {
+  color: #000000; 
+}
+
+.nav-text.active:hover {
+  color: #000000; 
+}
+
+.bg-utility{
+  background-color: #f7f0e4;
+}
+
+/* ===show hide navigation== */
+.navbar-show {
+  transform: translateY(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar-hide {
+  transform: translateY(-90%);
+  transition: transform 0.3s ease-in-out;
+}
+
+
+.navbar {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.navbar-brand {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.nav-link {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+  
